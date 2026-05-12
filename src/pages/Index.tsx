@@ -165,7 +165,7 @@ export default function Index() {
         />
 
         <div className="relative z-10 container mx-auto px-6 py-24 max-w-5xl">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl text-center sm:text-left">
             <div
               className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-body font-medium mb-6 animate-fade-up-delay-1"
               style={{
