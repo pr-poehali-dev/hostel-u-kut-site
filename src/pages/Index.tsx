@@ -13,7 +13,7 @@ const amenities = [
   { icon: "Utensils", label: "Общая кухня" },
   { icon: "Tv", label: "Телевизор" },
   { icon: "Shirt", label: "Постельное бельё" },
-  { icon: "Lock", label: "Личные шкафчики" },
+  { icon: "Lock", label: "Безопасность" },
   { icon: "Thermometer", label: "Отопление" },
   { icon: "Clock", label: "Заезд 24/7" },
 ];
