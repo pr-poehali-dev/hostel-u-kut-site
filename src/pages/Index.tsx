@@ -228,7 +228,7 @@ export default function Index() {
               {[
                 { icon: "MapPin", text: ADDRESS },
                 { icon: "Clock", text: "Круглосуточно" },
-                { icon: "Star", text: "Отзывы ВКонтакте" },
+                { icon: "Star", text: "Отзывы на Яндексе" },
               ].map(({ icon, text }) => (
                 <div
                   key={text}
