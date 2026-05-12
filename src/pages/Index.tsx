@@ -119,12 +119,14 @@ export default function Index() {
         </nav>
 
         <a
-          href={`tel:${PHONE}`}
+          href={VK_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-body font-medium transition-all hover:opacity-90"
           style={{ background: "var(--hostel-gold)", color: "var(--hostel-dark)" }}
         >
-          <Icon name="Phone" size={15} />
-          {PHONE_DISPLAY}
+          <span className="font-display font-bold">VK</span>
+          Мы ВКонтакте
         </a>
       </header>
 
