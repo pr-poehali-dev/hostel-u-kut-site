@@ -346,7 +346,7 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-3">
               {commonPhotos.slice(1).map((src, i) => (
                 <div
                   key={src}
