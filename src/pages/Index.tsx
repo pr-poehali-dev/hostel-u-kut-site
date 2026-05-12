@@ -875,47 +875,15 @@ export default function Index() {
             </div>
 
             <div className="flex flex-col gap-4">
-              <div
-                className="p-8 rounded-2xl flex flex-col items-center justify-center text-center gap-4 flex-1"
-                style={{
-                  background: "var(--hostel-surface)",
-                  border: "1px solid rgba(212,168,83,0.2)",
-                }}
-              >
-                <Icon
-                  name="BedDouble"
-                  size={40}
-                  style={{ color: "var(--hostel-gold)" } as React.CSSProperties}
+              <div className="rounded-2xl overflow-hidden flex-1" style={{ minHeight: 360, border: "1px solid rgba(212,168,83,0.15)" }}>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=105.7297%2C56.7963&z=17&pt=105.7297,56.7963,pm2rdm&text=Усть-Кут%2C%20ул.%20Кирова%2C%2036"
+                  width="100%"
+                  height="100%"
+                  style={{ minHeight: 360, border: "none", display: "block" }}
+                  allowFullScreen
+                  title="Хостел на карте"
                 />
-                <div>
-                  <p className="font-body text-sm mb-1" style={{ color: "var(--hostel-muted)" }}>
-                    Стоимость проживания
-                  </p>
-                  <p className="font-display font-bold text-6xl" style={{ color: "var(--hostel-gold)" }}>
-                    {PRICE}
-                  </p>
-                  <p className="font-body text-base mt-1" style={{ color: "var(--hostel-muted)" }}>
-                    в сутки с человека
-                  </p>
-                </div>
-                <div className="w-full section-divider" />
-                <a
-                  href="#booking"
-                  className="w-full py-4 rounded-xl font-display font-semibold uppercase tracking-wide text-base text-center transition-all hover:opacity-90"
-                  style={{ background: "var(--hostel-gold)", color: "var(--hostel-dark)" }}
-                >
-                  Забронировать место
-                </a>
-                <a
-                  href={`tel:${PHONE}`}
-                  className="w-full py-4 rounded-xl font-display font-semibold uppercase tracking-wide text-base text-center transition-all hover:opacity-80"
-                  style={{
-                    border: "1.5px solid rgba(212,168,83,0.4)",
-                    color: "var(--hostel-gold)",
-                  }}
-                >
-                  {PHONE_DISPLAY}
-                </a>
               </div>
             </div>
           </div>
