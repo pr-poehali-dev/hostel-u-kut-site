@@ -877,7 +877,7 @@ export default function Index() {
             <div className="flex flex-col gap-4">
               <div className="rounded-2xl overflow-hidden flex-1" style={{ minHeight: 360, border: "1px solid rgba(212,168,83,0.15)" }}>
                 <iframe
-                  src="https://yandex.ru/map-widget/v1/?ll=105.7297%2C56.7963&z=17&pt=105.7297,56.7963,pm2rdm&text=Усть-Кут%2C%20ул.%20Кирова%2C%2036"
+                  src="https://yandex.ru/map-widget/v1/?ll=105.7297%2C56.7963&z=17&pt=105.7297,56.7963,pm2rdl~105.7297,56.7963&text=Хостел%20Усть-Кут%20Кирова%2036"
                   width="100%"
                   height="100%"
                   style={{ minHeight: 360, border: "none", display: "block" }}
