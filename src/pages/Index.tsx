@@ -70,6 +70,9 @@ export default function Index() {
   ];
   const commonPhotos = [
     "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/files/ce37517b-c18b-41e8-82eb-7e196b39f9ee.jpg",
+    "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/6df3b2f8-2dd4-49be-8ddc-2d73278a51b0.jpg",
+    "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/4580dbbb-e1ef-4d2e-82b5-a5a39f306045.jpg",
+    "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/a0ac05c4-003e-408b-875a-ef7f5794ae1b.jpg",
   ];
 
   const handleBooking = (e: React.FormEvent) => {
@@ -333,7 +336,7 @@ export default function Index() {
           <div className="flex flex-col gap-3">
             <p className="font-display text-sm uppercase tracking-widest mb-1" style={{ color: "var(--hostel-gold)" }}>Общая зона</p>
             <div
-              className="rounded-2xl overflow-hidden h-full min-h-[280px] relative cursor-pointer group"
+              className="rounded-2xl overflow-hidden h-48 relative cursor-pointer group"
               onClick={() => setLightbox({ open: true, imgs: commonPhotos, idx: 0 })}
             >
               <img src={commonPhotos[0]} alt="Общая зона" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
@@ -343,6 +346,23 @@ export default function Index() {
                   <Icon name="ZoomIn" size={22} style={{ color: "var(--hostel-dark)" } as React.CSSProperties} />
                 </div>
               </div>
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              {commonPhotos.slice(1).map((src, i) => (
+                <div
+                  key={src}
+                  className="rounded-2xl overflow-hidden h-32 relative cursor-pointer group"
+                  onClick={() => setLightbox({ open: true, imgs: commonPhotos, idx: i + 1 })}
+                >
+                  <img src={src} alt={`Общая зона ${i + 2}`} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(20,18,16,0.4) 0%, transparent 60%)" }} />
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center" style={{ background: "rgba(212,168,83,0.85)" }}>
+                      <Icon name="ZoomIn" size={16} style={{ color: "var(--hostel-dark)" } as React.CSSProperties} />
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
