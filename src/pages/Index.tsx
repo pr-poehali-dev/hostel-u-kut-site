@@ -86,7 +86,7 @@ export default function Index() {
       {/* Floating Apartments Banner */}
       <a
         href={`tel:${PHONE}`}
-        className="fixed right-0 top-1/2 z-50 hidden md:flex items-center gap-2 px-3 py-3 rounded-l-xl shadow-2xl transition-all hover:pr-5"
+        className="fixed right-0 top-1/2 z-50 flex items-center gap-2 px-3 py-3 rounded-l-xl shadow-2xl transition-all hover:pr-5"
         style={{
           background: "var(--hostel-surface)",
           border: "1px solid rgba(212,168,83,0.3)",
