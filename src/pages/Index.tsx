@@ -86,20 +86,20 @@ export default function Index() {
       {/* Floating Apartments Banner */}
       <a
         href={`tel:${PHONE}`}
-        className="fixed left-0 top-1/2 z-50 hidden md:flex items-center gap-2 px-3 py-3 rounded-r-xl shadow-2xl transition-all hover:pl-5"
+        className="fixed right-0 top-1/2 z-50 hidden md:flex items-center gap-2 px-3 py-3 rounded-l-xl shadow-2xl transition-all hover:pr-5"
         style={{
           background: "var(--hostel-surface)",
           border: "1px solid rgba(212,168,83,0.3)",
-          borderLeft: "none",
+          borderRight: "none",
           transform: "translateY(-50%)",
           writingMode: "vertical-rl",
           textOrientation: "mixed",
         }}
       >
-        <Icon name="Home" size={14} style={{ color: "var(--hostel-gold)", transform: "rotate(90deg)" } as React.CSSProperties} />
-        <span className="font-body text-xs" style={{ color: "var(--hostel-muted)", transform: "rotate(180deg)" }}>
+        <span className="font-body text-xs" style={{ color: "var(--hostel-muted)" }}>
           Есть квартиры посуточно — звони!
         </span>
+        <Icon name="Home" size={14} style={{ color: "var(--hostel-gold)" } as React.CSSProperties} />
       </a>
 
       {/* Floating Call Button */}
