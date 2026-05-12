@@ -23,7 +23,7 @@ const rules = [
   { icon: "Volume2", label: "Тихий час с 23:00 до 7:00" },
   { icon: "Users", label: "Гостей принимать до 22:00" },
   { icon: "Sparkles", label: "Поддерживать чистоту" },
-  { icon: "Wine", label: "Алкоголь — умеренно" },
+  { icon: "Wine", label: "Алкоголь запрещён" },
   { icon: "PawPrint", label: "Животные по согласованию" },
 ];
 
