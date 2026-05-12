@@ -372,7 +372,7 @@ export default function Index() {
           <div className="flex flex-col gap-3">
             <p className="font-display text-sm uppercase tracking-widest mb-1" style={{ color: "var(--hostel-gold)" }}>Главный вход</p>
             <div
-              className="rounded-2xl overflow-hidden relative cursor-pointer group" style={{ height: "600px" }}
+              className="rounded-2xl overflow-hidden relative cursor-pointer group" style={{ height: "850px" }}
               onClick={() => setLightbox({ open: true, imgs: [entrancePhoto], idx: 0 })}
             >
               <img src={entrancePhoto} alt="Главный вход" className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105" />
