@@ -866,9 +866,7 @@ export default function Index() {
                   >
                     ВКонтакте
                   </p>
-                  <p className="font-body font-medium text-base" style={{ color: "var(--hostel-gold)" }}>
-                    vk.com/homeuk
-                  </p>
+
                   <p className="font-body text-xs" style={{ color: "var(--hostel-muted)" }}>
                     Фото, новости, отзывы
                   </p>
