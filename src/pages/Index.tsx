@@ -202,10 +202,10 @@ export default function Index() {
               <span className="font-body text-lg" style={{ color: "var(--hostel-muted)" }}>/ сутки</span>
             </div>
 
-            <div className="flex flex-wrap gap-4 animate-fade-up-delay-4">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-4">
               <a
                 href="#booking"
-                className="flex items-center gap-2 px-8 py-4 rounded-xl font-display font-semibold uppercase tracking-wide text-base transition-all hover:opacity-90 hover:scale-105"
+                className="flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-display font-semibold uppercase tracking-wide text-base transition-all hover:opacity-90 hover:scale-105"
                 style={{ background: "var(--hostel-gold)", color: "var(--hostel-dark)" }}
               >
                 <Icon name="CalendarCheck" size={20} />
@@ -213,7 +213,7 @@ export default function Index() {
               </a>
               <a
                 href={`tel:${PHONE}`}
-                className="flex items-center gap-2 px-8 py-4 rounded-xl font-display font-semibold uppercase tracking-wide text-base transition-all hover:scale-105"
+                className="flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-display font-semibold uppercase tracking-wide text-base transition-all hover:scale-105"
                 style={{
                   border: "1.5px solid var(--hostel-gold)",
                   color: "var(--hostel-gold)",
