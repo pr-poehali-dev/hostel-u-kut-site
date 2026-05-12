@@ -294,6 +294,29 @@ export default function Index() {
 
       <div className="section-divider mx-auto max-w-5xl" />
 
+      {/* PAYMENT */}
+      <section className="py-10 px-6">
+        <div className="max-w-5xl mx-auto flex flex-wrap gap-4 justify-center">
+          {[
+            { icon: "Banknote", text: "Наличный расчёт" },
+            { icon: "CreditCard", text: "Безналичный расчёт" },
+            { icon: "Building2", text: "Работаем с юр. и физ. лицами" },
+            { icon: "FileText", text: "Отчётные документы" },
+          ].map(({ icon, text }) => (
+            <div
+              key={text}
+              className="flex items-center gap-3 px-5 py-3 rounded-xl"
+              style={{ background: "var(--hostel-surface)", border: "1px solid rgba(212,168,83,0.2)" }}
+            >
+              <Icon name={icon as "Banknote"} size={18} style={{ color: "var(--hostel-gold)" } as React.CSSProperties} />
+              <span className="font-body text-sm" style={{ color: "var(--hostel-text)" }}>{text}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <div className="section-divider mx-auto max-w-5xl" />
+
       {/* PHOTO */}
       <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto flex flex-col gap-4">
