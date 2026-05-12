@@ -335,6 +335,18 @@ export default function Index() {
           {/* Блок ОБЩАЯ ЗОНА */}
           <div className="flex flex-col gap-3">
             <p className="font-display text-sm uppercase tracking-widest mb-1" style={{ color: "var(--hostel-gold)" }}>Общая зона</p>
+            <div
+              className="rounded-2xl overflow-hidden h-48 relative cursor-pointer group"
+              onClick={() => setLightbox({ open: true, imgs: commonPhotos, idx: 0 })}
+            >
+              <img src={commonPhotos[0]} alt="Общая зона 1" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(20,18,16,0.5) 0%, transparent 60%)" }} />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: "rgba(212,168,83,0.85)" }}>
+                  <Icon name="ZoomIn" size={22} style={{ color: "var(--hostel-dark)" } as React.CSSProperties} />
+                </div>
+              </div>
+            </div>
             <div className="grid grid-cols-3 gap-3">
               {commonPhotos.slice(1).map((src, i) => (
                 <div
