@@ -283,40 +283,49 @@ export default function Index() {
 
       {/* PHOTO */}
       <section className="py-16 px-6">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-4">
-          <div className="rounded-2xl overflow-hidden h-64 relative">
-            <img
-              src="https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/files/d9fefcf1-47e6-4ba4-9178-28ab7788be03.jpg"
-              alt="Номер хостела"
-              className="w-full h-full object-cover"
-            />
-            <div
-              className="absolute inset-0"
-              style={{ background: "linear-gradient(to top, rgba(20,18,16,0.6) 0%, transparent 60%)" }}
-            />
-            <p
-              className="absolute bottom-4 left-4 font-display text-sm uppercase tracking-widest"
-              style={{ color: "var(--hostel-gold)" }}
-            >
+        <div className="max-w-5xl mx-auto">
+          <div className="mb-10 text-center">
+            <p className="font-body text-xs uppercase tracking-widest mb-2" style={{ color: "var(--hostel-gold)" }}>
+              Фотографии
+            </p>
+            <h2 className="font-display font-bold text-4xl uppercase tracking-wide" style={{ color: "var(--hostel-text)" }}>
               Номера
-            </p>
+            </h2>
           </div>
-          <div className="rounded-2xl overflow-hidden h-64 relative">
-            <img
-              src="https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/files/ce37517b-c18b-41e8-82eb-7e196b39f9ee.jpg"
-              alt="Общая зона"
-              className="w-full h-full object-cover"
-            />
-            <div
-              className="absolute inset-0"
-              style={{ background: "linear-gradient(to top, rgba(20,18,16,0.6) 0%, transparent 60%)" }}
-            />
-            <p
-              className="absolute bottom-4 left-4 font-display text-sm uppercase tracking-widest"
-              style={{ color: "var(--hostel-gold)" }}
-            >
-              Общая зона
-            </p>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="rounded-2xl overflow-hidden h-64 relative md:col-span-2">
+              <img
+                src="https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/ebdeb959-7ebc-40e0-9a97-d74a4af49344.jpg"
+                alt="Номер хостела — двухъярусные кровати"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(20,18,16,0.5) 0%, transparent 60%)" }} />
+              <p className="absolute bottom-4 left-4 font-display text-sm uppercase tracking-widest" style={{ color: "var(--hostel-gold)" }}>
+                Спальный номер
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden h-64 relative">
+              <img
+                src="https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/a58dff22-2e97-4461-bdb5-30e09b349cab.jpg"
+                alt="Двухъярусные кровати"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(20,18,16,0.5) 0%, transparent 60%)" }} />
+              <p className="absolute bottom-4 left-4 font-display text-sm uppercase tracking-widest" style={{ color: "var(--hostel-gold)" }}>
+                Кровати
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden h-64 relative md:col-span-3">
+              <img
+                src="https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/7c016392-11a0-4fae-b216-9da263be1b9f.jpg"
+                alt="Комната с телевизором"
+                className="w-full h-full object-cover object-center"
+              />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(20,18,16,0.5) 0%, transparent 60%)" }} />
+              <p className="absolute bottom-4 left-4 font-display text-sm uppercase tracking-widest" style={{ color: "var(--hostel-gold)" }}>
+                Телевизор в номере
+              </p>
+            </div>
           </div>
         </div>
       </section>
