@@ -69,7 +69,6 @@ export default function Index() {
     "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/7c016392-11a0-4fae-b216-9da263be1b9f.jpg",
   ];
   const commonPhotos = [
-    "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/files/ce37517b-c18b-41e8-82eb-7e196b39f9ee.jpg",
     "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/6df3b2f8-2dd4-49be-8ddc-2d73278a51b0.jpg",
     "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/4580dbbb-e1ef-4d2e-82b5-a5a39f306045.jpg",
     "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/a0ac05c4-003e-408b-875a-ef7f5794ae1b.jpg",
