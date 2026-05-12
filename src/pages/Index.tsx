@@ -773,7 +773,7 @@ export default function Index() {
                   icon: "Phone",
                   title: "Телефон",
                   value: PHONE_DISPLAY,
-                  sub: "Звонки и WhatsApp",
+                  sub: "Только звонки",
                   href: `tel:${PHONE}`,
                 },
                 {
