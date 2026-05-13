@@ -62,6 +62,7 @@ export default function Index() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [lightbox, setLightbox] = useState<{ open: boolean; imgs: string[]; idx: number }>({ open: false, imgs: [], idx: 0 });
+  const [recBanner, setRecBanner] = useState(() => !localStorage.getItem("rec_accepted"));
 
   const roomPhotos = [
     "https://cdn.poehali.dev/projects/6fc3c0e0-e4d1-4e5d-bfb8-0b90f93b7d7e/bucket/ebdeb959-7ebc-40e0-9a97-d74a4af49344.jpg",
@@ -82,6 +83,44 @@ export default function Index() {
 
   return (
     <div className="min-h-screen" style={{ background: "var(--hostel-dark)", color: "var(--hostel-text)" }}>
+
+      {/* Recommendation Tech Banner */}
+      {recBanner && (
+        <div
+          className="fixed bottom-0 left-0 right-0 z-[60] px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6"
+          style={{
+            background: "var(--hostel-surface)",
+            borderTop: "1px solid rgba(212,168,83,0.25)",
+          }}
+        >
+          <p className="font-body text-xs flex-1" style={{ color: "var(--hostel-muted)" }}>
+            Мы используем{" "}
+            <a
+              href="/recommendation-tech"
+              className="underline transition-colors"
+              style={{ color: "var(--hostel-gold)" }}
+            >
+              рекомендательные технологии
+            </a>{" "}
+            и файлы cookie для улучшения работы сайта. Продолжая использование сайта, вы соглашаетесь с{" "}
+            <a
+              href="/privacy"
+              className="underline transition-colors"
+              style={{ color: "var(--hostel-gold)" }}
+            >
+              политикой обработки данных
+            </a>
+            .
+          </p>
+          <button
+            onClick={() => { localStorage.setItem("rec_accepted", "1"); setRecBanner(false); }}
+            className="flex-shrink-0 px-6 py-2.5 rounded-xl font-display font-semibold uppercase tracking-wide text-sm transition-all hover:opacity-90"
+            style={{ background: "var(--hostel-gold)", color: "var(--hostel-dark)" }}
+          >
+            Принять
+          </button>
+        </div>
+      )}
 
       {/* Floating Apartments Banner */}
       <a
