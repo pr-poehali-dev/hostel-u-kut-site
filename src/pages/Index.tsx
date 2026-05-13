@@ -16,6 +16,7 @@ const amenities = [
   { icon: "Lock", label: "Безопасность" },
   { icon: "Thermometer", label: "Отопление" },
   { icon: "Clock", label: "Заезд 24/7" },
+  { icon: "WashingMachine", label: "Стирка и сушка белья" },
 ];
 
 const rules = [
