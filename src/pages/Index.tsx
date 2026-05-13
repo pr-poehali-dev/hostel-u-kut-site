@@ -962,9 +962,30 @@ export default function Index() {
           color: "var(--hostel-muted)",
         }}
       >
-        <p>
+        <p className="mb-3">
           © 2025 ХОСТЕЛ · Усть-Кут · {ADDRESS} · {PHONE_DISPLAY}
         </p>
+        <div className="flex items-center justify-center gap-4 flex-wrap">
+          <a
+            href="/privacy"
+            className="transition-colors hover:underline"
+            style={{ color: "var(--hostel-muted)" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--hostel-gold)")}
+            onMouseLeave={e => (e.currentTarget.style.color = "var(--hostel-muted)")}
+          >
+            Политика обработки персональных данных
+          </a>
+          <span style={{ color: "rgba(212,168,83,0.3)" }}>·</span>
+          <a
+            href="/recommendation-tech"
+            className="transition-colors hover:underline"
+            style={{ color: "var(--hostel-muted)" }}
+            onMouseEnter={e => (e.currentTarget.style.color = "var(--hostel-gold)")}
+            onMouseLeave={e => (e.currentTarget.style.color = "var(--hostel-muted)")}
+          >
+            Рекомендательные технологии
+          </a>
+        </div>
       </footer>
     </div>
   );
