@@ -247,6 +247,7 @@ export default function Index() {
             <div className="flex flex-wrap gap-6 mt-10 animate-fade-up-delay-4">
               {[
                 { icon: "MapPin", text: ADDRESS },
+                { icon: "Train", text: "5 минут от ж/д вокзала" },
                 { icon: "Clock", text: "Круглосуточно" },
                 { icon: "Star", text: "Отзывы на Яндексе" },
               ].map(({ icon, text }) => (
